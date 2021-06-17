@@ -11,11 +11,14 @@ header, footer {
 
 }
 
-nav > ul {
+nav   ul li {
     list-style-type: none;
-    
+   
 }
 
+ul li{
+    text-decoration:none;
+}
 
 h2{
 color: #d62828;
@@ -58,4 +61,41 @@ header{
 
     flex-direction:column;
     
+}
+
+
+
+th,td {
+    border:1px solid black;
+    padding: 1rem;
+
+}
+
+th{
+    margin-bottom: 1rem;
+    
+    }
+.colors{
+    text-align: center;
+}
+.Header{
+    background-color:#DD7373;
+
+}
+.Navigation{
+    background-color:#4D6CFA;
+}
+.Fonts{
+    background-color:#511C29;
+}
+.Website{
+    background-color:#1EA896;
+}
+
+table{
+    margin: 0 auto;
+}
+
+img{
+    margin-left: 23rem ;
 }
