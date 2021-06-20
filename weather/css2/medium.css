@@ -1,0 +1,27 @@
+@media only screen and (min-width: 32.5em){
+    
+   
+  
+
+nav ul.hide  {
+    
+    display:flex;
+}
+
+nav button {display:none;}
+    
+#primaryNav{ display:flex;
+        justify-content:center;
+        
+      
+    }
+    nav ul li a {
+        border:none;
+        border-right:1px solid black rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+    }
+
+
+}
+
+
