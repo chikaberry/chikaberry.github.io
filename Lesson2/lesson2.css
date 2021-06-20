@@ -13,6 +13,7 @@ header, footer {
 
 nav   ul li {
     list-style-type: none;
+    text-decoration: none
    
 }
 
@@ -36,7 +37,8 @@ p {
 
 
 .links{
-    justify-content: center;}
+    justify-content: center;
+    text-decoration: none}
 
 
 
@@ -53,6 +55,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-decoration: none
     
 }
 
@@ -83,7 +86,7 @@ th{
 
 }
 .Navigation{
-    background-color:#4D6CFA;
+    background-color:#9b9b9b;
 }
 .Fonts{
     background-color:#511C29;

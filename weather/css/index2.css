@@ -1,0 +1,67 @@
+
+header, footer {
+
+  display:grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr ;
+  color:black;
+  font-size: 25px;
+  background-color:#DD7373;
+  padding: .8rem;
+  border-radius: .5rem;
+  /*text-align: center;
+  justify-content: center;*/
+
+}
+
+main{
+
+
+  background-color: #4d6cfa;
+  font-size: 25px;
+  padding: .8rem;
+  border-radius: .5rem;
+}
+.logo-box img{
+    border:none;
+    box-shadow: none;
+    justify-content: left;
+    
+  }
+
+.logo-text{
+  
+  text-align:center;
+  font-size: 50px;
+  margin: auto 0;
+}
+
+.logo-slogan{
+  text-align: center;
+  font-size: 35px;
+  margin: auto 0;
+}
+  
+  nav ul {
+    list-style: none; /*removes the bullet point*/
+    display: grid;
+  
+    margin: 0;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    /* auto-fit tells the browser to create as many columns as it can fit in the space availabe*/
+    /*Then instead of giving a specific size for each column, we used the minmax method. This tells 
+    the browser to create columns that are 1fr big, but no column can be smaller than 6em .*/
+  }
+  
+  nav a:hover {
+    color:#9b9b9b;
+  }
+  
+  nav a {
+    color:black;
+    /*margin-left: 30px;*/
+    text-decoration: none;
+  }
+  
+  
