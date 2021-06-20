@@ -21,7 +21,20 @@ nav button {display:none;}
         padding: .6rem 1rem;
     }
 
+    nav ul li  {width:270px;}
 
+
+    .logo-text{
+    
+       
+        font-size: 40px;
+       
+      }
+      .logo-box{
+        
+        flex-direction: row;
+      }
+      .logo-box img{ align-content: left;}
 }
 
 

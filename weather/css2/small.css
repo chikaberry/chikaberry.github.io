@@ -31,7 +31,8 @@ header, footer {
   .logo-box img{
       border:none;
       box-shadow: none;
-      justify-content: left;
+      align-content: center;
+      width:200px;
       
     }
   
@@ -46,14 +47,14 @@ header, footer {
   
   .logo-box{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   
   
   .logo-text{
     
     text-align:center;
-    font-size: 50px;
+    font-size: 30px;
     margin: auto 0;
   }
   
