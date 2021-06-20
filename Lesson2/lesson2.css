@@ -17,7 +17,7 @@ nav   ul li {
    
 }
 
-ul li{
+ul li a{
     text-decoration:none;
 }
 
@@ -38,8 +38,8 @@ p {
 
 .links{
     justify-content: center;
-    text-decoration: none}
-
+    text-decoration: none;
+}
 
 
 body {
@@ -55,7 +55,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    text-decoration: none
+    text-decoration: none;
     
 }
 
