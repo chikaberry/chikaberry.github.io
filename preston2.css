@@ -1,0 +1,48 @@
+header, footer {
+    color: white;
+    font-size: 10px;
+    background-color: purple;
+    padding: 1rem;
+    border-radius: .5rem;
+    
+    /*display: grid;
+grid-column: 2/3;
+    /*grid-row: 1/3;*/
+    
+    text-align: center;
+    justify-content: center;
+}
+
+
+p {
+    text-align: center;
+}
+
+li{
+    justify-content: center;
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+
+img { 
+    float: right;
+    width:210px;
+    margin-right: 0px;
+}
+.links{
+    font-size:2rem;
+    border-bottom: 2.5px solid black;
+    margin-right: 1rem;
+    
+}
+h1{
+    font-size: 30px;
+}
+footer{
+    font-size: 20px;
+}
