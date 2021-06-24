@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css1/normalize.css">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <link rel="stylesheet" href="css2/small.css">
     <link rel="stylesheet" href="css2/medium.css">
@@ -23,7 +26,20 @@
 
 <body>
     <header>
-       
+       <div class="banner">  <!--THE BANNER COLOR-->
+            <div class="banner_content"> <!--containng the icon and the text-->
+            <div class="banner__text" >
+                    <strong>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</strong>
+            </div>
+                <button class="banner__close" type="button"> 
+                    <span class="material-icons">
+                        close
+                        </span>
+                </button>
+
+                
+            </div>
+       </div>
 
             <div class="logo-box">
                 <img src="images/weathers.png" alt="Logo pic" />
@@ -37,19 +53,21 @@
 
 
             </div>
+
+            <div class="active">
             <nav class="clearfix">
                 <nav class="link">
                     <button onclick="toggleMenu()">&#9776;</button>
                     <ul id="primaryNav" class="hide">
                         <li><a href="#">Home </a></li>
-                        <li><a href="#">Preston</a></li>
+                        <li><a class="home__link"href="#">Preston</a></li>
                         <li><a href="#">Forecast</a></li>
                         <li><a href="#">Gallery</a></li>
                         <li><a href="#">Contact </a></li>
                     </ul>
                 </nav>
             </nav>
-
+        </div>
     </header>
 
     <main>
@@ -59,12 +77,74 @@
         <section class="outline">
 
 
-            <div class="box">
-                <h3>Weather Forecast</h3>
+            <div class="home__img">
+                <img src="images/forest.jpg" alt="Home pic" />
             </div>
 
-            <div class="box">
-                <h3>Headlines</h3>
+
+            <h3>Five Day Forercast</h3>
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head"></span>
+                    <span class="iconify" data-icon="wi:night-snow-thunderstorm" data-inline="false"></span>
+                    <p>Wednesday <br>
+                        40 °C <br>
+                        Precipitation: 22% <br>
+                        Humidity: 79% <br>
+                        Wind: 18 km/h</p>
+                    <span class="data"></span>
+                </div>
+
+                <div class="flex-col">
+                    <span class="col-head"></span>
+                    <span class="iconify" data-icon="carbon:cloudy" data-inline="false"></span>
+<p> Thursday<br>
+    31 °C <br>
+    Precipitation: 20% <br>
+    Humidity: 70% <br>
+    Wind: 20 km/h</p>
+                    <span class="data"></span>
+                </div>
+             <div class="flex-col">
+                        <span class="col-head"></span>
+                        <span class="iconify" data-icon="fe:sunny-o" data-inline="false"></span>
+                        <p>Friday <br>
+                            29 °C <br>
+                            Precipitation: 15% <br>
+                            Humidity: 50% <br>
+                            Wind:10 km/h</p>
+                        <span class="data"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head"></span>
+                        <span class="iconify" data-icon="fe:sunny-o" data-inline="false"></span>
+                        <p>Saturday <br>
+                            30 °C <br>
+                            Precipitation: 20% <br>
+                            Humidity: 45% <br>
+                            Wind:7 km/h</p>
+                        <span class="data"></span>
+                    </div>
+
+                    <div class="flex-col">
+                        <span class="col-head"></span>
+                        <span class="iconify" data-icon="wi:night-snow-thunderstorm" data-inline="false"></span>
+                    <p>Wednesday <br>
+                        42 °C <br>
+                        Precipitation: 25% <br>
+                        Humidity: 80% <br>
+                        Wind: 20 km/h</p>
+                        <span class="data"></span>
+                    </div>
+ </div>
+
+
+
+            <div class="Article">
+                <img src="images/PS.jpg" alt="Park pic" />
+                <p>Of course, nature play takes place outdoors, but playing in and with nature is quite different from playing in an outdoor swimming pool or playground structure. Giving kids the chance to explore, take risks, build a fort, and get dirty is an invaluable role of local parks. When kids are given opportunities for free play in nature, they are healthier and smarter, and they care more for the environment. 
+
+                    NRPA is proud to join a number of other national partners to support the efforts of the National Wildlife Federation and the Natural Learning Initiative at North Carolina State University to develop Nature Play and Learning Areas Design Guidelines, due out next month. The Guidelines will offer tested, research-based strategies for engaging kids and families in outdoor play – supporting healthy brains and bodies. Be sure to check out the September issue of Parks & Recreation Magazine to learn more.</p>
             </div>
 
             <div class="box">

@@ -27,6 +27,7 @@ header, footer {
     font-size: 25px;
     padding: .8rem;
     border-radius: .5rem;
+    border: solid black;
   }
   .logo-box img{
       border:none;
@@ -130,3 +131,81 @@ header, footer {
     display: table;
     clear: both;
   }
+
+  /*This is the way finder for the links, it lets viewers know where they are going to*/
+
+  .active ul li a.home__link{
+    background-color:#4CAF50;
+
+  }
+/*This brought the square brackets on the links because  i added an active class to the ul li tag*/
+  .active ul li a:hover{
+    background-color: #555;
+    color:white;
+  }
+/* I think does the same thing as the code above
+  .active ul li a:hover:not(.active){
+    background-color: green;
+    color:red;
+  } */
+
+  /*The color over the text*/
+  .banner_content {  
+    background-color: burlywood;
+    margin:0 auto;
+    padding: 5px;
+    width: 100%;
+  }
+  .banner__text{
+    text-align: center;
+  }
+    
+.banner__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin:0 auto;
+  display:flex;
+  align-items: left;
+}
+
+.home__img{
+  padding-left: 18px;
+  margin: 0 auto;
+  max-width: 300%;
+
+  
+}
+
+
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+  flex-flow: row wrap;
+  padding-left: 18px;
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: rgb(206, 201, 201);
+}
+.flex-col, .column-col, .grid-col {
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
+}
+/*.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}*/
+.flex, .column, .grid {
+	border-right: 1px solid #333;
+}
+
+.iconify { width: 24px; 
+  height: 24px; 
+padding-top: 1px;
+
+}
