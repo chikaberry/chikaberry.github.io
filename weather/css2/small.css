@@ -44,6 +44,9 @@ header, footer {
   
   }
   
+  h3{
+    text-align: center;
+  }
   
   
   .logo-box{
@@ -108,6 +111,7 @@ header, footer {
     h2{
       font-size: 3rem;
       margin-left: 1rem;
+      text-align: center;
   
     }
   
@@ -169,10 +173,11 @@ header, footer {
   align-items: left;
 }
 
-.home__img{
-  padding-left: 18px;
+.home__img img{
+  /*padding-left: 18px;*/
   margin: 0 auto;
-  max-width: 300%;
+  width: 100%;
+  height: 500px;
 
   
 }
@@ -195,6 +200,12 @@ header, footer {
 	border-left: 1px solid #333;
 	text-align: center;
 }
+
+.flex-col img{
+
+  width:100px;
+  
+}
 /*.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
 	opacity: 0.75;
 	background-color: black;
@@ -204,8 +215,59 @@ header, footer {
 	border-right: 1px solid #333;
 }
 
+
+
 .iconify { width: 24px; 
   height: 24px; 
 padding-top: 1px;
 
+}
+
+.prestonmap{
+  
+  width: 50%;
+  height: 250px;
+
+}
+
+.location p{
+  justify-content: right;
+}
+
+.maps{
+  display:flex;
+  justify-content:space-around;
+  
+}
+
+.socialmedia{
+ 
+  align-content: center;
+  justify-content: space-between;
+}
+
+.maps p {
+  margin: 0;
+}
+h4{
+  margin:0;
+}
+
+.article img{
+  width: 600px;
+  height: 345px;
+  box-shadow: rgb(128, 12, 29);
+  margin: 0px 0px 0px 10px;   /*Basically, the four numbers represent TOP RIGHT BOTTOM LEFT. 
+  So if you want to add the white space to a right-aligned image, you would do this:*/
+
+
+}
+
+.article{
+  
+  border: solid black;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  
 }

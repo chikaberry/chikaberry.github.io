@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css1/normalize.css">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
@@ -26,41 +25,43 @@
 
 <body>
     <header>
-       <div class="banner">  <!--THE BANNER COLOR-->
-            <div class="banner_content"> <!--containng the icon and the text-->
-            <div class="banner__text" >
+        <div class="banner">
+            <!--THE BANNER COLOR-->
+            <div class="banner_content">
+                <!--containng the icon and the text-->
+                <div class="banner__text">
                     <strong>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</strong>
-            </div>
-                <button class="banner__close" type="button"> 
+                </div>
+                <button class="banner__close" type="button">
                     <span class="material-icons">
                         close
-                        </span>
+                    </span>
                 </button>
 
-                
-            </div>
-       </div>
-
-            <div class="logo-box">
-                <img src="images/weathers.png" alt="Logo pic" />
-                <section class="logo-text">
-                    <h1>We Outside </h1>
-
-
-
-                    <p class="logo-slogan">Unbeatable Forecast!</p>
-                </section>
-
 
             </div>
+        </div>
 
-            <div class="active">
+        <div class="logo-box">
+            <img src="images/weathers.png" alt="Logo pic" />
+            <section class="logo-text">
+                <h1>We Outside </h1>
+
+
+
+                <p class="logo-slogan">Unbeatable Forecast!</p>
+            </section>
+
+
+        </div>
+
+        <div class="active">
             <nav class="clearfix">
                 <nav class="link">
                     <button onclick="toggleMenu()">&#9776;</button>
                     <ul id="primaryNav" class="hide">
                         <li><a href="#">Home </a></li>
-                        <li><a class="home__link"href="#">Preston</a></li>
+                        <li><a class="home__link" href="#">Preston</a></li>
                         <li><a href="#">Forecast</a></li>
                         <li><a href="#">Gallery</a></li>
                         <li><a href="#">Contact </a></li>
@@ -78,7 +79,7 @@
 
 
             <div class="home__img">
-                <img src="images/forest.jpg" alt="Home pic" />
+                <img src="images/heroimage.jpeg" alt="Home pic" />
             </div>
 
 
@@ -86,7 +87,7 @@
             <div class="flex">
                 <div class="flex-col">
                     <span class="col-head"></span>
-                    <span class="iconify" data-icon="wi:night-snow-thunderstorm" data-inline="false"></span>
+                    <img src="images/thunder.png" alt="thunderstorm pic" />
                     <p>Wednesday <br>
                         40 °C <br>
                         Precipitation: 22% <br>
@@ -97,65 +98,101 @@
 
                 <div class="flex-col">
                     <span class="col-head"></span>
-                    <span class="iconify" data-icon="carbon:cloudy" data-inline="false"></span>
-<p> Thursday<br>
-    31 °C <br>
-    Precipitation: 20% <br>
-    Humidity: 70% <br>
-    Wind: 20 km/h</p>
+                    <img src="images/cloudy.png" alt="cloudy pic" />
+                    <p> Thursday <br>
+                        31 °C <br>
+                        Precipitation: 20% <br>
+                        Humidity: 70% <br>
+                        Wind: 20 km/h</p>
                     <span class="data"></span>
                 </div>
-             <div class="flex-col">
-                        <span class="col-head"></span>
-                        <span class="iconify" data-icon="fe:sunny-o" data-inline="false"></span>
-                        <p>Friday <br>
-                            29 °C <br>
-                            Precipitation: 15% <br>
-                            Humidity: 50% <br>
-                            Wind:10 km/h</p>
-                        <span class="data"></span>
-                    </div>
-                    <div class="flex-col">
-                        <span class="col-head"></span>
-                        <span class="iconify" data-icon="fe:sunny-o" data-inline="false"></span>
-                        <p>Saturday <br>
-                            30 °C <br>
-                            Precipitation: 20% <br>
-                            Humidity: 45% <br>
-                            Wind:7 km/h</p>
-                        <span class="data"></span>
-                    </div>
+                <div class="flex-col">
+                    <span class="col-head"></span>
+                    <img src="images/sunny.jpeg" alt="sunny pic" />
+                    <p>Friday <br>
+                        29 °C <br>
+                        Precipitation: 15% <br>
+                        Humidity: 50% <br>
+                        Wind:10 km/h</p>
+                    <span class="data"></span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head"></span>
+                    <img src="images/sunny.jpeg" alt="sunny pic" />
+                    <p>Saturday <br>
+                        30 °C <br>
+                        Precipitation: 20% <br>
+                        Humidity: 45% <br>
+                        Wind:7 km/h</p>
+                    <span class="data"></span>
+                </div>
 
-                    <div class="flex-col">
-                        <span class="col-head"></span>
-                        <span class="iconify" data-icon="wi:night-snow-thunderstorm" data-inline="false"></span>
-                    <p>Wednesday <br>
+                <div class="flex-col">
+                    <span class="col-head"></span>
+                    <img src="images/thunder.png" alt="thunderstorm pic" />
+                    <p>Sunday <br>
                         42 °C <br>
                         Precipitation: 25% <br>
                         Humidity: 80% <br>
                         Wind: 20 km/h</p>
-                        <span class="data"></span>
-                    </div>
- </div>
-
-
-
-            <div class="Article">
-                <img src="images/PS.jpg" alt="Park pic" />
-                <p>Of course, nature play takes place outdoors, but playing in and with nature is quite different from playing in an outdoor swimming pool or playground structure. Giving kids the chance to explore, take risks, build a fort, and get dirty is an invaluable role of local parks. When kids are given opportunities for free play in nature, they are healthier and smarter, and they care more for the environment. 
-
-                    NRPA is proud to join a number of other national partners to support the efforts of the National Wildlife Federation and the Natural Learning Initiative at North Carolina State University to develop Nature Play and Learning Areas Design Guidelines, due out next month. The Guidelines will offer tested, research-based strategies for engaging kids and families in outdoor play – supporting healthy brains and bodies. Be sure to check out the September issue of Parks & Recreation Magazine to learn more.</p>
+                    <span class="data"></span>
+                </div>
             </div>
 
-            <div class="box">
+        
+
+
+            <div class="article">
+                <h3>Kids and Nature</h3>
+                <img src="images/PS.jpg " align="right"  />
+                <p>Of course, nature play takes place outdoors, but playing in and with nature is quite different from
+                    playing in an outdoor swimming pool or playground structure. Giving kids the chance to explore, take
+                    risks, build a fort, and get dirty is an invaluable role of local parks. When kids are given
+                    opportunities for free play in nature, they are healthier and smarter, and they care more for the
+                    environment.
+
+                    NRPA is proud to join a number of other national partners to support the efforts of the National
+                    Wildlife Federation and the Natural Learning Initiative at North Carolina State University to
+                    develop Nature Play and Learning Areas Design Guidelines, due out next month. The Guidelines will
+                    offer tested, research-based strategies for engaging kids and families in outdoor play – supporting
+                    healthy brains and bodies. Be sure to check out the September issue of Parks & Recreation Magazine
+                    to learn more. </p>
+            </div>
+
+           <!-- <div class="box">
                 <h3>Parks Update in Idaho</h3>
-            </div>
+            </div>-->
 
-            <div class="box">
-                <h3>Contact us</h3>
+        </section>
+        <section class="maps">
+
+
+
+            <img class="prestonmap" src="images/map.png" alt="map pic" />
+
+
+            <div class="socialmedia">
+                <h4>We Outside</h4>
+
+                <p>
+                    <span class="iconify" data-icon="dashicons:location-alt" data-inline="false"></span>105 E West 2000 N
+                    <br>
+                    Preston, ID 44448
+
+                </p>
+
+                <p> <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span> 820-555-900</p>
+                <a href="https://en-gb.facebook.com/login/" target="_blank"><img
+                        src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png" alt="Facebook" /></a>
+
+                <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                    <img src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png" alt="Instagram" />
+                </a>
+                <a href="https://twitter.com/login?lang=en-gb" target="_blank"><img
+                        src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png" alt="Twitter" />
+                </a>
             </div>
         </section>
-
     </main>
     <footer>
         &copy;<span id="year"></span> | Chika Wonodi | Idaho | <a href="https://www.byui.edu/online">BYUI Online
