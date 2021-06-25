@@ -20,3 +20,14 @@
        
       }
 }
+
+
+.article img{
+  
+
+  box-shadow: rgb(128, 12, 29);
+  margin: 0px 0px 0px 10px;   /*Basically, the four numbers represent TOP RIGHT BOTTOM LEFT. 
+  So if you want to add the white space to a right-aligned image, you would do this:*/
+float: right;
+
+}

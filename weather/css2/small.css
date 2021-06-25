@@ -46,6 +46,7 @@ header, footer {
   
   h3{
     text-align: center;
+    margin: 0 auto;
   }
   
   
@@ -110,8 +111,9 @@ header, footer {
   
     h2{
       font-size: 3rem;
-      margin-left: 1rem;
+      
       text-align: center;
+      margin: auto 0;
   
     }
   
@@ -184,34 +186,37 @@ header, footer {
 
 
 .flex {
-	display: flex;
+	/*display: flex;*/
 	/* flex-direction: row; */
 	/* let us combine row and wrap with flow */
-  flex-flow: row wrap;
-  padding-left: 18px;
+  /*flex-flow: row wrap;*/
+  /*padding-left: 18px;
+  width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;*/
+    display:none;
 }
 
-.flex-col {
+/*.flex-col {
 	flex: 1 1 auto;
-	background-color: rgb(206, 201, 201);
-}
-.flex-col, .column-col, .grid-col {
+  background-color: rgb(206, 201, 201);
+  width:100px;
+}*/
+
+ .column-col, .grid-col {
 	border-bottom: 1px solid #333;
 	border-left: 1px solid #333;
 	text-align: center;
 }
 
-.flex-col img{
 
-  width:100px;
-  
-}
 /*.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
 	opacity: 0.75;
 	background-color: black;
 	color: white;
 }*/
-.flex, .column, .grid {
+ .column, .grid {
 	border-right: 1px solid #333;
 }
 
@@ -227,6 +232,7 @@ padding-top: 1px;
   
   width: 50%;
   height: 250px;
+  margin-top: 25px;
 
 }
 
@@ -237,6 +243,7 @@ padding-top: 1px;
 .maps{
   display:flex;
   justify-content:space-around;
+  background-color: rgb(204, 198, 198);
   
 }
 
@@ -244,6 +251,7 @@ padding-top: 1px;
  
   align-content: center;
   justify-content: space-between;
+  margin-top: 25px;
 }
 
 .maps p {
@@ -254,16 +262,18 @@ h4{
 }
 
 .article img{
-  width: 600px;
-  height: 345px;
+  width: 100%;
+  box-shadow: rgb(128, 12, 29);
+  /*height: 345px;
   box-shadow: rgb(128, 12, 29);
   margin: 0px 0px 0px 10px;   /*Basically, the four numbers represent TOP RIGHT BOTTOM LEFT. 
-  So if you want to add the white space to a right-aligned image, you would do this:*/
+  So if you want to add the white space to a right-aligned image, you would do this:
 
-
+*/
 }
 
 .article{
+  
   
   border: solid black;
   padding-right: 20px;
@@ -271,3 +281,7 @@ h4{
   
   
 }
+
+/*.flex p{
+  font-size: 10px;
+}*/
