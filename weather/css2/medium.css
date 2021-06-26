@@ -35,7 +35,7 @@ nav button {display:none;}
         flex-direction: row;
       }
       .logo-box img{ align-content: left;}
-}
+
 
 
 .flex {
@@ -79,4 +79,48 @@ nav button {display:none;}
     float: right;
     
     }
+  
+
+
+  .prestonmap{
+  
     
+  display:flex;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*close of the query*/
+
+}
