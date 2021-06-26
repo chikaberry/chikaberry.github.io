@@ -297,10 +297,13 @@ h4{
   border-radius: 10px;
   position:absolute;
   text-justify: distribute;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 .weathersummary h2{
   font-size: 20px;
   margin: auto 0;
+  
   
 
    }
