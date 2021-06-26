@@ -295,14 +295,25 @@ h4{
   background-color: rgb(233, 146, 15);
   display: table;
   border-radius: 10px;
+  position:absolute;
+  text-justify: distribute;
 }
 .weathersummary h2{
   font-size: 20px;
   margin: auto 0;
-  padding: 30px;
   
+
    }
+/*setting the overlay for my hero image*/
 
+.home__img{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr ;
+}
 
-
+.weathersummary{
+  grid-row: 2/3;
+  z-index: 0;
+}
 
