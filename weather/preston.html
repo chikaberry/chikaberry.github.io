@@ -86,12 +86,19 @@
             <div class="home__img">
 
                 
-                <img srcset="heroimagesmall-1.png 250w,
+               <!-- <img srcset="heroimagesmall-1.png 250w,
                             images/mediumhero1.png 500w,
                             images/herolarge1png.png 1000w"
                             sizes="100vw"
 
-                src="images/images/herolarge1png.png" alt="Home pic" />
+                src="images/images/herolarge1png.png" alt="Home pic" />-->
+
+
+                <picture class="heroimg">
+                    <source media="(max-width: 500px)" srcset="images/heroimagesmall-1.png">
+                    <source media="(max-width: 800px)" srcset="images/mediumhero1.png ">
+                    <img class="heroimg" src="images/herolarge1png.png" alt="Home pic field">
+                </picture>
             
             <section class="weathersummary">
                 <h2><u>Weather Summary</u></h2>

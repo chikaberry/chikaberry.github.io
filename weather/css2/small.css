@@ -28,6 +28,10 @@ header, footer {
     padding: .8rem;
     border-radius: .5rem;
     border: solid black;
+
+    max-width: 1000px;
+/* this margin auto centered the page as well as limiting the image movement was with the max width.*/
+    margin: auto ;
   }
   .logo-box img{
       border:none;
@@ -295,7 +299,7 @@ h4{
   background-color: rgb(233, 146, 15);
   display: table;
   border-radius: 10px;
-  position:absolute;
+  position:relative;
   text-justify: distribute;
   margin-left: 2rem;
   margin-top: 2rem;
