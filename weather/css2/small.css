@@ -27,7 +27,7 @@ header, footer {
     font-size: 25px;
     padding: .8rem;
     border-radius: .5rem;
-    border: solid black;
+    /*border: solid black;*/
 
     max-width: 1000px;
 /* this margin auto centered the page as well as limiting the image movement was with the max width.*/

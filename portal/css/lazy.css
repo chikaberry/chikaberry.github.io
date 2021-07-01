@@ -1,0 +1,16 @@
+
+
+.lazy {
+    display: block;
+   margin:auto;
+   padding: 0.5rem;
+}
+
+h1{
+    text-align: center;
+    color:cornsilk;
+}
+
+body{
+    background-color: blue;
+}
