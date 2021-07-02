@@ -1,0 +1,3 @@
+
+
+document.getElementById("temp").textContentnb

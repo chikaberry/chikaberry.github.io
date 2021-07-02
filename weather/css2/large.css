@@ -42,6 +42,11 @@ float: right;
 }
 
 
+.image p{
+  display:flex ;
+}
+
+
 
 
 
