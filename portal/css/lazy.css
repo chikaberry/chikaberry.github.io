@@ -4,6 +4,9 @@
     display: block;
    margin:auto;
    padding: 0.5rem;
+   width:300px;
+    height:400px;
+  
 }
 
 h1{
@@ -16,11 +19,12 @@ body{
 }
 
 
-.class img[data-src] {
+img[data-src] {
     filter: blur(0.2em);
   }
-  
-  .class img {
-    filter: blur(0em);
-    transition: filter 0.5s;
+   img {
+    
+    transition-duration: filter 0.5s;
   }
+
+  

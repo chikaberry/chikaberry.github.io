@@ -1,7 +1,6 @@
-
-let options={
-    threshold: 0
-    /* threshold how far in does the image has to be for it to load*/
+/*let options={
+    threshold: 1.5
+    /* threshold how far in does the image has to be for it to load
 }
 
 
@@ -29,3 +28,45 @@ imgs.forEach(img => {
     observer.observe(img);
     
 })
+
+*/
+
+/*The data_src is there so it can only reference the one we set up for lazy loading*/
+
+const images = document.querySelectorAll("[data-src]");
+
+
+function preLoadImage(img) {
+    const src = img.getAttribute("data-src");
+    if(!src) {
+        return;
+    }
+    img.src = src;
+    img.removeAttribute("data-src")
+}
+
+
+
+const imgOptions = {
+    threshold: 0,
+    rootMargin:"0px 0px -300px 0px"
+};
+
+const imageObserver = new IntersectionObserver((entries, imageObserver) => { 
+
+
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preLoadImage(entry.target);
+            imageObserver.unobserve(entry.target);
+        }
+    })
+}, imgOptions);
+
+
+images.forEach(image => {
+    imageObserver.observe(image);
+});
+    

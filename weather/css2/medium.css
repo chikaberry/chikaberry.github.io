@@ -92,6 +92,29 @@ nav button {display:none;}
   .weathersummary{
     position: absolute;}
 
+
+    .weather_pics{
+      
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    .image{
+      
+      
+      box-shadow:  5px 4px  5px grey;
+      border-radius: 0.5rem;
+      
+      
+    }
+    
+    .image:hover{
+      background-color: rgb(240, 235, 235);
+    }
+
+
+
     
 
 

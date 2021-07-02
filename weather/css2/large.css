@@ -19,10 +19,10 @@
         font-size: 50px;
        
       }
-}
 
 
-.article img{
+
+ .article img{
   
 
   box-shadow: rgb(128, 12, 29);
@@ -31,3 +31,24 @@
 float: right;
 
 }
+
+
+
+.weather_pics{
+  
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+}
+
+

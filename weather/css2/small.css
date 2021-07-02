@@ -331,11 +331,24 @@ h4{
   width: 300px;
   height: 400px;
 
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  
 }
 
-{
+.weather_pics{
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
+  
+}
+.image{
+  padding-top: 3rem;
+  
+  
+  border-radius: 0.5rem;
+  font-size: 15px;
+  
+}
+
+.image p{
+  display:none;
 }
