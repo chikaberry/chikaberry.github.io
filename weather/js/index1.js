@@ -37,3 +37,42 @@ function toggleMenu() {
 }
 
 
+
+
+const images = document.querySelectorAll("[data-src]");
+
+
+function preLoadImage(img) {
+    const src = img.getAttribute("data-src");
+    if(!src) {
+        return;
+    }
+    img.src = src;
+    img.removeAttribute("data-src")
+}
+
+
+
+const imgOptions = {
+    threshold: 1,
+    rootMargin:"0px 0px 100px 0px"
+};
+
+const imageObserver = new IntersectionObserver((entries, imageObserver) => { 
+
+
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preLoadImage(entry.target);
+            imageObserver.unobserve(entry.target);
+        }
+    })
+}, imgOptions);
+
+
+images.forEach(image => {
+    imageObserver.observe(image);
+});
+    
