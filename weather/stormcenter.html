@@ -83,7 +83,8 @@
 
                 <legend> Resident reporting form</legend>
                 <label class="top"> Full Name* <input type="text" name="fullname" required> </label>
-                <label class="top"> Email* <input type="email" name="email" placeholder="someome@gmail.com" required> </label>
+                <label class="top"> Email* <input type="email" name="email" placeholder="someome@gmail.com" required>
+                </label>
                 <label class="top"> Phone* <input type="tell" name="phone" placeholder="12345678979" required> </label>
                 <!--<label> Website <input type="url" name="url" placeholder="http://" required> </label>-->
                 <label class="top">Zipcode* <input type="number" name="Zipcode" placeholder="12345" required> </label>
@@ -91,12 +92,12 @@
 
             <fieldset>
                 <legend> Storm information</legend>
-                <label class="middle" for="start">Storm date <input type="date" id="start" value="mm/dd/yy" min="2021-01-01"
-                        max="2022-01-01">
+                <label class="middle" for="start">Storm date <input type="date" id="start" value="mm/dd/yy"
+                        min="2021-01-01" max="2022-01-01">
 
 
                     <label class="middle" for="Storm type">Storm type</label>
-                    <input list="Stormtypes" id="storm" name="Storm type" />
+                    <input list="Stormtypes" id="storm" name="Storm type" placeholder=" Please select stormtype" />
 
                     <datalist id="Stormtypes">
                         <option value="Flash Flood">
@@ -109,12 +110,12 @@
 
 
 
-               <!-- <div>
+                <!-- <div>
                     <label for="Stormseverity">Storm Severity</label>
                     <input type="range" value="10" min="1" max="10"
                         oninput="this.nextElementSibling.value = this.value">
                     <output>10</output> </div>
---> 
+-->
 
                 <label class="middle" for="Stormseverity"> Storm Severity &nbsp;&nbsp;&nbsp;
                     <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
@@ -137,7 +138,7 @@
                 </datalist>
 
 
-                
+
 
                 <!-- <label>Browser:
                 <input name="Storm region" list="Stormregionlist"></label>
@@ -147,7 +148,7 @@
                 <option value="Fish Haven">
             </datalist>
             <br><br>-->
-                <label class="middle" > Storm Region
+                <label class="middle"> Storm Region
                     <select name="browsers" id="selectbrowser" onchange="selectResponse()">
                         <option value="" disabled selected>Select a Region...</option>
                         <option value="Chrome">Preston</option>
@@ -156,20 +157,21 @@
 
                     </select></label>
 
+
+                <label class="middle">Are you in danger? <em>(Choose one)</em> </label>
+                <!--div class="selection">-->
+
+                <label> <input type="radio" id="time1" name="danger" value="yes">  Yes</label> <br>
+                    <!--div class="selection"-->
+                    <label><input type="radio" name="danger" value="Maybe"> Maybe</label> <br>
                     
-                    <label class="middle" >Are you in danger? <em>(Choose one)</em>
-                    <div class="selection">
-                        <input type="radio" id="time1" name="yes" value="yes" > <label for="option1">yes</label>
-                    </div>
-                    <div class="selection">
-                        <label><input type="radio" name="maybe" value="Maybe"> Maybe</label>
-                    </div>
-                    <div class="selection">
-                        <input type="radio" id="time3" name="time" value="No">
-                        <label for="option3">No</label>
-                    </div>
-                </label>
-                    
+                           <label> <input type="radio" id="time3" name="danger" value="No">
+                            No </label>
+
+                        
+
+
+
             </fieldset>
 
 
@@ -178,8 +180,8 @@
                     Additional Information
                 </legend>
 
-                <label  class="Additonalcomment"> 
-                    <textarea  name="Comments" cols="30" rows="10"></textarea>
+                <label class="Additonalcomment">
+                    <textarea name="Comments" cols="30" rows="10"></textarea>
                 </label>
             </fieldset>
 

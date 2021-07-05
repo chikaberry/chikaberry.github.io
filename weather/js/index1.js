@@ -76,3 +76,16 @@ images.forEach(image => {
     imageObserver.observe(image);
 });
     
+
+
+function adjustRating(Stormseverity) {
+    document.getElementById("ratingvalue").innerHTML = Stormseverity;
+}
+
+function selectResponse() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#selectbrowser');
+	s.style.display = "block";
+	s.textContent = sel.value;
+	
+}

@@ -366,11 +366,66 @@ form legend{
   margin: 0 1rem;
   color:blue;
   padding: 0 .5rem;
+  
 
 }
 
-form label.top, form div {
+form label.top, form label.middle, form div {
   display:block;
   padding-top: 1rem;
+  font-size: 30px; 
+  
 
+}
+
+form label.top input, form label.middle input, form label.top form label.middle select {
+  
+  display: block;
+
+border: solid 1px #999;
+border-radius: 4px;
+padding:.75rem;
+color: #555;
+width: 100%;
+max-width: 20rem;
+background-color: rgba(0,0,0,0.1);
+}
+
+form label.middle{
+  display: block;
+  padding: .75rem 0;
+  color:#555;
+}
+
+form input.submitBtn{
+  border: none;
+  background-color: burlywood;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  font-size: 30px;
+  width:96%;
+  max-width: 30rem;
+}
+
+/* this one gives the color to the form that validates it*/
+
+form label.top input, form label.middle input:required {
+  border-left: solid red 6px ;
+
+}
+
+/*this one turn greens when the info is correct*/
+
+form label.top input, form label.middle input:valid {
+  border-left: solid green 6px;
+}
+
+
+.response{
+  width: 60%;
+   margin: auto;
+   border: 1px solid cornflowerblue;
+   padding: 1rem;
+   background-color:cornflowerblue;
+  
 }
