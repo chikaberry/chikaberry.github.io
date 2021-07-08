@@ -110,7 +110,9 @@ nav button {display:none;}
     }
     
     .image:hover{
-      background-color: rgb(240, 235, 235);
+      /*background-color: rgb(240, 235, 235);*/
+
+      background-color:tomato;
     }
 
 
