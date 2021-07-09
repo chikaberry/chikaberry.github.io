@@ -429,3 +429,83 @@ form label.top input, form label.middle input:valid {
    background-color:cornflowerblue;
   
 }
+
+/*for the home mels page*/
+
+picture img{
+  width:100%;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+
+/*h2{
+  text-align: center;
+  border-bottom: 3px double black;
+  
+}*/
+
+/*start here*/
+.individual{
+  display: grid;
+  grid-template-columns: 1fr ;
+  margin-top: 1rem;
+  max-width: 100%;
+  
+  box-shadow: 1px 2px 3px 4px grey;
+  
+  
+}
+.individual .info{
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: 4px 5px 5px 4px ;
+  background-color: rgb(204, 204, 204);
+  max-width:80%;
+  
+  
+}
+
+.info .image1size{
+  max-width:100%;
+  box-shadow: 3px 3px 9px 5px black;
+  
+}
+
+.towns{
+  border-top: 5px double #000000;
+  border-bottom: 5px double #000000;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+  
+  
+}
+
+.writings{
+  padding:.5rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.writings h2{
+  border-bottom: 4px double;
+}
+
+.writings p{
+  font-weight: bolder;
+  
+}
+
+.text{
+  box-shadow: 2px 3px 7px black;
+  padding:1rem;
+  margin-top:2rem ;
+  border-left: 10px solid #38839e;
+}
+
+.text h3{
+  font-size: 2rem;
+  color:#38839e;
+  
+}
+
+/*for the home mels page*/
