@@ -1,4 +1,30 @@
+
+
+
+
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+   background: turquoise;
+}
+
+h1{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+
+img{
+    width:100px
+}
+
+h2{
+    color:tomato;
+    font-size: 10px;
+    
+}
+section{
+    padding-left: 50px;
+   
 }
