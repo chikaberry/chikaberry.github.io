@@ -53,6 +53,18 @@ form label.middle {
 }
 
 
+/* for the home page*/
+
+.individual{
+
+  grid-template-columns: 1fr 1fr  1fr ;
+}
+
+.info{
+  display: grid;
+}
+
+
 
 
 

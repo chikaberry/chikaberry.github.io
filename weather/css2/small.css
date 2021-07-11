@@ -451,17 +451,16 @@ form label.top input, form label.middle input:valid {
   margin-top: 1rem;
   max-width: 100%;
   
-  box-shadow: 1px 2px 3px 4px grey;
+  box-shadow: 1px 2px 3px 4px rgb(25, 180, 108);
   
   
 }
 .individual .info{
-  margin: 0 auto;
-  margin-top: 2rem;
+  margin:1rem;
   padding: 1rem;
   box-shadow: 4px 5px 5px 4px ;
-  background-color: rgb(204, 204, 204);
-  max-width:80%;
+  background-color: rgba(37, 214, 214, 0.911);
+  max-width:100%;
   
   
 }

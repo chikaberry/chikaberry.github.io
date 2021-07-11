@@ -122,16 +122,29 @@ nav button {display:none;}
     
 
 
+/* for the home page*/
 
 
 
+.individual{
+  grid-template-rows: 1/4;
+}
 
 
+.info{
+  display:flex;
+  
+}
+/*flex letters to the right or left*/
+.info:nth-child(even){
+  flex-direction: row-reverse;
+}
 
 
-
-
-
+.info img{
+width:300px;
+height: 200px;
+}
 
 
 

@@ -145,4 +145,3 @@ fetch(requestURL)
         };
     });
 
-    
