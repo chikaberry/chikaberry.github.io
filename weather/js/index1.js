@@ -211,16 +211,18 @@ fetch(apiURLW)
     console.log(fiveDayForecast);
 
     fiveDayForecast.forEach(x => {
+
+       
       let d = new Date(x.dt_txt);
 
-      let flexcol = 'https://openweathermap.org/img/w/' + x.weather[0].icon + '.png';
+      let topp = 'https://openweathermap.org/img/w/' + x.weather[0].icon + '.png';
       let desc = x.weather[0].description;
 
 
-      document.getElementById(`day${day+1}`).textContent =week[d.getDay()];
+      document.getElementById(`col-head${day+1}`).textContent =week[d.getDay()];
       document.getElementById(`forecast${day+1}`).innerHTML = x.main.temp;
       
-      document.getElementById(`icon${day+1}`).setAttribute('src', flexcol);
+      document.getElementById(`icon${day+1}`).setAttribute('src', topp);
       document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
       day++;
 
