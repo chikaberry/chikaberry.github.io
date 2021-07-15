@@ -65,7 +65,17 @@ form label.middle {
 }
 
 
-
+.activity{
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+.activity h3{
+  font-size: 20px;
+}
+.activity p{
+  font-size: 15px;
+  text-align: center;
+}
 
 
 
