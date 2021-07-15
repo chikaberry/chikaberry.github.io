@@ -233,9 +233,10 @@ fetch(apiURLW)
 
 
 
-  /*Events Js*/
+  /*Events Js
 
-  
+ 
+
   fetch(requestURL)
   .then(function (response) {
       return response.json();
@@ -263,4 +264,4 @@ fetch(apiURLW)
 
 
 
-  });
+  });*/
