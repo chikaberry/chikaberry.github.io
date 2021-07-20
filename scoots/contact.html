@@ -22,60 +22,102 @@
         rel="stylesheet">
     <title>Scoots Motors</title>
 </head>
+
 <body>
     <header>
-<div class="logo-box">
+        <div class="logo-box">
 
+
+
+            <img src="images/scooter.jpg" alt="Logo pic" />
+            <section class="logo-text">
+                <h1>Scoots Motors</h1>
+                <p class="logo-slogan">Fun on wheels</p>
+            </section>
+
+
+        </div>
+
+        <div class="active">
+            <nav class="clearfix">
+                <nav class="link">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="primaryNav" class="hide">
+                        <li><a class="home__link" href="home.html"> Home </a></li>
+                        <li><a href="reservation.html">Reservations</a></li>
+                        <li><a href="rental.html"> Rentals</a></li>
+                        <li><a href="tours.html">Tours</a></li>
+                        <li><a href="contact.html"> Contact </a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+
+<section class="address1">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223828.18438149462!2d-87.01662007772958!3d20.573245532509215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1626751488838!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+</section>
+            <section class="address2">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7411536882564!2d-86.97476196527859!3d20.475821989128825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1626760650863!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+             </section>
+
+<section class="contact">
+             <h2> Contact  Form</h2>
+
+    <form method="get" action="thanks.html">
+<section class="white">
+        <fieldset>
+
+            <legend> Tourist reporting form</legend>
+            <label class="top"> Full Name* <input type="text" name="fullname" required> </label>
+            <label class="top"> Email* <input type="email" name="email" placeholder="someome@gmail.com" required>
+            </label>
+            <label class="top"> Phone* <input type="tell" name="phone" placeholder="12345678979" required> </label>
+            <!--<label> Website <input type="url" name="url" placeholder="http://" required> </label>-->
             
+            <label class="top">CruiseID* <input type="number" name="cruise" placeholder="12349" required> </label>
+        </fieldset>
 
-    <img src="images/scooter.jpg" alt="Logo pic" />
-    <section class="logo-text">
-        <h1>Scoots Motors</h1>
-<p class="logo-slogan">Fun on wheels</p>
-    </section>
+        <fieldset>
+            <legend>
+                Additional Information
+            </legend>
 
+            <label class="Additonalcomment">
+                <textarea name="Comments" cols="30" rows="10" placeholder="  This includes but not limited to dropoffs, pickups and anything we need to know to serve you better" ></textarea>
+            </label>
+        </fieldset>
 
-</div>
+        <input type="submit" value="Submit contact information" class="submitBtn">
+    </form>
 
-<div class="active">
-    <nav class="clearfix">
-        <nav class="link">
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li><a class="home__link" href="home.html"> Home </a></li>
-                <li><a  href="reservation.html">Reservations</a></li>
-                <li><a href="rental.html"> Rentals</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a  href="contact.html"> Contact </a></li>
-            </ul>
-        </nav>
-    </nav>
-</div>
-</header>
-
-
-<main>
-
-
-</main>
+</section>
+    </main>
 
 
 
-<footer>
-    <section class="maps">
-
-
-
-        <img class="prestonmap" src="images/map.png" alt="map pic" />
+    <footer>
 
 
         <div class="socialmedia">
-            <h4>We Outside</h4>
+
 
             <p>
-                <span class="iconify" data-icon="dashicons:location-alt" data-inline="false"></span>105 E West 2000 N
+                <span class="iconify" data-icon="dashicons:location-alt" data-inline="false"></span>San Miguel de
+                Cozumel
                 <br>
-                Preston, ID 44448
+                Quintana Roo, Mexico
 
             </p>
 
@@ -90,12 +132,12 @@
                     src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png" alt="Twitter" />
             </a>
         </div>
-    </section>
+        </section>
 
-    &copy;<span id="year"></span> | Chika Wonodi | Idaho | <a href="https://www.byui.edu/online">BYUI Online
-        Learning </a><br>
-    <section class="update">Last modified: <span id="lastmod"></span></section>
-</footer>
+        &copy;<span id="year"></span> | Chika Wonodi | Idaho | <a href="https://www.byui.edu/online">BYUI Online
+            Learning </a><br>
+        <section class="update">Last modified: <span id="lastmod"></span></section>
+    </footer>
 
 </body>
 
