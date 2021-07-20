@@ -1,0 +1,334 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+
+
+/* css for the home page*/
+
+header, footer{
+    
+    display:flex;
+    
+}
+
+
+
+
+.logo-box img{
+    height: 200px;
+    width: 230px;
+    padding-left: 2rem;
+
+    padding-top: 2rem;
+    
+}
+.logo-box{
+    background-color: tomato;
+}
+.logo-text{
+    
+    text-align:center;
+    font-size: 15px;
+    margin: auto 0;
+    padding-top: -100px;
+    padding-left: 2rem;
+  }
+  
+  .logo-slogan{
+    text-align: center;
+    font-size: 20px;
+    margin-top:-3rem;
+    padding-top: 20px;
+   
+  }
+
+  nav ul {
+    list-style: none; /*removes the bullet point*/
+    display: grid;
+  
+    margin: 0;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    /* auto-fit tells the browser to create as many columns as it can fit in the space availabe*/
+    /*Then instead of giving a specific size for each column, we used the minmax method. This tells 
+    the browser to create columns that are 1fr big, but no column can be smaller than 6em .*/
+  }
+  
+  nav a:hover {
+    color:rgb(29, 126, 37);
+  }
+  
+  nav a {
+    color:black;
+    /*margin-left: 30px;*/
+    text-decoration: none;
+  }
+
+  footer{
+    text-align:center;
+  }
+
+  .link{
+    padding:1rem;
+    width:100%
+  }
+
+  .box{
+    background-color: rgb(206, 201, 201);
+    border: 1px dotted black;
+    margin: 1rem;
+    padding:1rem;
+  }
+
+
+  h2{
+    font-size: 3rem;
+    
+    text-align: center;
+    margin: auto 0;
+
+  }
+
+
+  nav ul.hide {
+    display: none;
+}
+
+nav button{
+  margin:.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  color:#fff;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*This is the way finder for the links, it lets viewers know where they are going to*/
+
+.active ul li a.home__link{
+  background-color:#4CAF50;
+
+}
+/*This brought the square brackets on the links because  i added an active class to the ul li tag*/
+.active ul li a:hover{
+  background-color: #555;
+  color:white;
+}
+/* I think does the same thing as the code above
+.active ul li a:hover:not(.active){
+  background-color: green;
+  color:red;
+} */
+
+
+
+
+body{
+    background-color: tomato;
+}
+
+
+main{
+    /*display:grid;
+    grid-template-columns: 1/2;
+    grid-template-rows: 1fr 1fr 1fr;*/
+    border: double;
+}
+
+
+
+/*revolving pics css*/
+
+.revolving-pics img{
+   width: 1200px;
+   height:300px;
+  padding-left: 170px;
+  ;
+
+}
+
+/* for the notice article on the page*/
+
+.notice{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width:300px;
+    padding-bottom: 5px;
+    border-radius: 1.5rem;
+    margin: auto;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+h3{
+    color: red;
+    
+}
+
+
+/* for the weather 5 day forecast*/
+
+.flex {
+	/*display: flex;*/
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+  /*flex-flow: row wrap;*/
+  /*padding-left: 18px;
+  width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;*/
+    display:none;
+}
+
+.column-col, .grid-col {
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
+}
+
+
+/*.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}*/
+ .column, .grid {
+	border-right: 1px solid #333;
+}
+
+.weathersummary{
+    background-color: teal;
+    color: white;
+    text-align: center;
+    width:300px;
+    padding-bottom: 5px;
+    border-radius: 1.5rem;
+    margin: auto;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+
+
+
+/* for the rental pic*/
+
+.rental img{
+    width: 900px;
+  
+   padding-left: 250px;
+}
+
+.rental{
+    align-content: center;
+}
+
+
+
+
+form fieldset {
+
+    margin: 2rem 0;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding:.5rem 2%;
+    
+  }
+  
+  form legend{
+    margin: 0 1rem;
+    color:blue;
+    padding: 0 .5rem;
+    
+  
+  }
+  
+  form label.top, form label.middle, form div {
+    display:block;
+    padding-top: 1rem;
+    font-size: 30px; 
+    
+  
+  }
+  
+  form label.top input, form label.middle input, form label.top form label.middle select {
+    
+    display: block;
+  
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding:.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0,0,0,0.1);
+  }
+  
+  form label.middle{
+    display: block;
+    padding: .75rem 0;
+    color:#555;
+  }
+  
+  form input.submitBtn{
+    border: none;
+    background-color: burlywood;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    font-size: 30px;
+    width:96%;
+    max-width: 30rem;
+  }
+  
+  /* this one gives the color to the form that validates it*/
+  
+  form label.top input, form label.middle input:required {
+    border-left: solid red 6px ;
+  
+  }
+  
+  /*this one turn greens when the info is correct*/
+  
+  form label.top input, form label.middle input:valid {
+    border-left: solid green 6px;
+  }
+  
+  
+  .response{
+    width: 60%;
+     margin: auto;
+     border: 1px solid cornflowerblue;
+     padding: 1rem;
+     background-color:cornflowerblue;
+    
+  }
+
+  .white{
+      background-color: whitesmoke;
+      width: 80%;
+     margin: auto;
+  }
+  /*for my foprm page*/
+
+
+
+  /*tourist page*/
+
+  .tourist1 img{
+      width: 300px;
+      height: 400px;
+
+  }

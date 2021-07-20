@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssmain/normalize.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="cssmain/small.css">
+    <link rel="stylesheet" href="cssmain/medium.css">
+    <link rel="stylesheet" href="cssmain/large.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Scoots Motors</title>
+</head>
+<body>
+    <header>
+<div class="logo-box">
+
+            
+
+    <img src="images/scooter.jpg" alt="Logo pic" />
+    <section class="logo-text">
+        <h1>Scoots Motors</h1>
+<p class="logo-slogan">Fun on wheels</p>
+    </section>
+
+
+</div>
+
+<div class="active">
+    <nav class="clearfix">
+        <nav class="link">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="home__link" href="home.html"> Home </a></li>
+                <li><a  href="reservation.html">Reservations</a></li>
+                <li><a href="rental.html"> Rentals</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a  href="contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+    </nav>
+</div>
+</header>
+<main>
+    <div class="revolving-pics">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img
+              src="images/island.jpg"
+              alt="photo slide"
+            />
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="images/island 2.jpg"
+              alt="photo slides"
+            />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              src="images/island3.jpg"
+              alt="photo slides"
+            />
+            <div class="text">Caption Three</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img
+              src="images/island5.jpg"
+              alt="photo slides"
+            />
+            <div class="text">Caption four</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img
+              src="images/scoot1.jpg"
+              alt="photo slides"
+            />
+            <div class="text">Caption five</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img
+              src="images/scoot.jpg"
+              alt="photo slides"
+            />
+            <div class="text">Caption six</div>
+          </div>
+        </div>
+        <br />
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+
+
+
+      <section class="notice" >
+          <h3>Notice</h3>
+          <p> Please make sure you have your scooter reserved before your trip. <br>
+        They are the best way to get around the island and avoid traffic. <br>
+        With our good discounts rates, we will surelly leave a smmile on your face! 
+    </p>
+      </section>
+
+
+      <section class="weathersummary">
+        <h2><u>Weather Summary</u></h2>
+        <p> Currently: <span id="shortforecast"></span></p>
+        <p> Temperature: <span id="temperature"> 45</span>&deg;F</p>
+        <!--<p> Wind Chill: <span id="windchill"></span></p>-->
+         <p> Humidity: <span id="humidity"></span>%</p> 
+        <p> Wind Speed: <span id="speed"> 60</span> mph</p>
+    </section>
+    </div>
+    </section>
+
+    <h3>Five Day Forercast</h3>
+    <div class="flex">
+        <div class="flex-col">
+            <span class="topp" id="col-head1"></span>
+            <img src="#" alt="#" id="icon1"/>
+            
+           <p> <span class="data" id="forecast1"></span>&deg;F</p>
+        </div>
+
+        <div class="flex-col">
+            <span class="topp" id="col-head2"></span>
+            <img src="#" alt="#" id="icon2"/>
+            
+           <p> <span class="data" id="forecast2"></span>&deg;F</p>
+            
+        </div>
+        <div class="flex-col">
+            <span class="topp" id="col-head3"></span>
+            <img src="#" alt="#" id="icon3"/>
+            
+           <p> <span class="data" id="forecast3"></span>&deg;F</p>
+        </div>
+
+        <div class="flex-col">
+            <span class="topp" id="col-head4"></span>
+            <img src="#" alt="#" id="icon4"/>
+            
+            <p> <span class="data" id="forecast4"></span>&deg;F</p>
+        </div>
+
+        <div class="flex-col">
+            <span class="topp" id="col-head5"></span>
+            <img src="#" alt="#" id="icon5"/>
+            
+           <p> <span class="data" id="forecast5"></span>&deg;F</p>
+        </div>
+    </div>
+
+      
+    <section class="rental">
+        <img
+              src="images/rental.jpg"
+              alt="rental pic"
+            />
+
+    </section>
+
+
+</main>
+
+
+
+
+
+
+    <footer>
+        <section class="maps">
+
+
+
+            <img class="prestonmap" src="images/map.png" alt="map pic" />
+
+
+            <div class="socialmedia">
+                <h4>We Outside</h4>
+
+                <p>
+                    <span class="iconify" data-icon="dashicons:location-alt" data-inline="false"></span>105 E West 2000 N
+                    <br>
+                    Preston, ID 44448
+
+                </p>
+
+                <p> <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span> 820-555-900</p>
+                <a href="https://en-gb.facebook.com/login/" target="_blank"><img
+                        src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png" alt="Facebook" /></a>
+
+                <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                    <img src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png" alt="Instagram" />
+                </a>
+                <a href="https://twitter.com/login?lang=en-gb" target="_blank"><img
+                        src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png" alt="Twitter" />
+                </a>
+            </div>
+        </section>
+
+        &copy;<span id="year"></span> | Chika Wonodi | Idaho | <a href="https://www.byui.edu/online">BYUI Online
+            Learning </a><br>
+        <section class="update">Last modified: <span id="lastmod"></span></section>
+    </footer>
+
+</body>
+
+<script src="js/index.js"></script>
+
+</html>

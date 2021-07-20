@@ -1,0 +1,77 @@
+@media only screen and (min-width: 32.5em){
+    
+   
+  
+
+    nav ul.hide  {
+        
+        display:flex;
+    }
+    
+    nav button {display:none;}
+        
+    #primaryNav{ display:flex;
+            justify-content:center;
+            
+          
+        }
+        nav ul li a {
+            border:none;
+            border-right:1px solid black rgba(0,0,0,0.3);
+            padding: .6rem 1rem;
+        }
+    
+        nav ul li  {width:270px;}
+    
+    
+        .logo-text{
+        
+           
+            font-size: 40px;
+           
+          }
+          .logo-box{
+            
+            flex-direction: row;
+          }
+          .logo-box img{ align-content: left;}
+    
+    
+    
+    .flex {
+        display: flex;
+        /* flex-direction: row; */
+        /* let us combine row and wrap with flow */
+      flex-flow: row wrap;
+      /*padding-left: 18px;*/
+      border-right: 1px solid #333;
+      width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 10px;}
+    
+        .flex-col img{
+    
+          width: 20%;
+           
+         }
+    
+    .flex-col {
+          flex: 1 1 auto;
+          background-color: rgb(206, 201, 201);
+          width:100px;
+          border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        text-align: center;
+        }
+    
+        .flex p{
+          font-size: 10px;
+        }
+    
+
+
+
+
+
+    }

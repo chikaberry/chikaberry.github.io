@@ -1,0 +1,24 @@
+@media only screen and (min-width: 60em){
+    /*main{ 
+    
+        grid-template-columns: 1fr 1fr 1fr ;
+        
+    }*/
+    
+
+    nav ul li {float:left;}
+
+    nav ul.hide  {
+        display: list-item;
+    }
+    
+
+      .logo-text{
+    
+        
+        font-size: 50px;
+       
+      }
+
+
+    }

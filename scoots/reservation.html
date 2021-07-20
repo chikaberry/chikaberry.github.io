@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssmain/normalize.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="cssmain/small.css">
+    <link rel="stylesheet" href="cssmain/medium.css">
+    <link rel="stylesheet" href="cssmain/large.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Scoots Motors</title>
+</head>
+<body>
+    <header>
+<div class="logo-box">
+
+            
+
+    <img src="images/scooter.jpg" alt="Logo pic" />
+    <section class="logo-text">
+        <h1>Scoots Motors</h1>
+<p class="logo-slogan">Fun on wheels</p>
+    </section>
+
+
+</div>
+
+<div class="active">
+    <nav class="clearfix">
+        <nav class="link">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="home__link" href="home.html"> Home </a></li>
+                <li><a  href="reservation.html">Reservations</a></li>
+                <li><a href="rental.html"> Rentals</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a  href="contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+    </nav>
+</div>
+</header>
+
+
+
+
+
+
+
+
+
+<main>
+    <h2> Scooter Rental Form</h2>
+
+    <form method="get" action="thanks.html">
+<section class="white">
+        <fieldset>
+
+            <legend> Resident reporting form</legend>
+            <label class="top"> Full Name* <input type="text" name="fullname" required> </label>
+            <label class="top"> Email* <input type="email" name="email" placeholder="someome@gmail.com" required>
+            </label>
+            <label class="top"> Phone* <input type="tell" name="phone" placeholder="12345678979" required> </label>
+            <!--<label> Website <input type="url" name="url" placeholder="http://" required> </label>-->
+            <label class="top">Country* <input type="text" name="Zipcode" placeholder="Nigeria" required> </label>
+            <label class="top">CruiseID* <input type="number" name="cruise" placeholder="12349" required> </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Rental information</legend>
+            <label class="middle" for="start">Rental date <input type="date" id="start" value="mm/dd/yy"
+                    min="2021-01-01" max="2022-01-01">
+
+
+                <label class="middle" for="Rental type">Rental type</label>
+                <input list="Stormtypes" id="storm" name="Rental type" placeholder="  Select rentaltype" />
+
+                <datalist id="Stormtypes">
+                    <option value="Honda Dio Scooter">
+                    <option value="Honda pcx150 Scooter">
+                    <option value="Honda pioneer ATV">
+                    <option value="Jeep Wrangler--4 door with a/c">
+                    <option value="Jeep Wrangler--2 door">
+                        <option value= "Honda Metro Scooter">
+                </datalist>
+            </label>
+
+
+
+            <!-- <div>
+                <label for="Stormseverity">Storm Severity</label>
+                <input type="range" value="10" min="1" max="10"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output>10</output> </div>
+-->
+
+            <label class="middle" for="Stormseverity"> Scooter skill level &nbsp;&nbsp;&nbsp;
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+
+
+
+
+            <!-- <label>Browser:
+            <input name="Storm region" list="Stormregionlist"></label>
+        <datalist id="Stormregionlist">
+            <option value="Preston">
+            <option value="Soda Springs">
+            <option value="Fish Haven">
+        </datalist>
+        <br><br>-->
+            <label class="middle"> Scooting Areas
+                <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+                    <option value="" disabled selected>Select a Region...</option>
+                    <option value="Chrome">Cozumel Beach</option>
+                    <option value="Firefox">Main street</option>
+                    <option value="MS Edge">Hotel Palazio</option>
+
+                </select></label>
+
+
+           / <label class="middle">Do you have insurance?<em>(Choose one)</em> </label>
+            <!--div class="selection">-->
+
+            <label> <input type="radio" id="time1" name="danger" value="yes">  Yes</label> <br>
+                <!--div class="selection"-->
+                <!--<label><input type="radio" name="danger" value="Maybe"> Maybe</label> <br>-->
+                
+                       <label> <input type="radio" id="time3" name="danger" value="No">
+                        No </label>
+
+                    
+
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>
+                Additional Information
+            </legend>
+
+            <label class="Additonalcomment">
+                <textarea name="Comments" cols="30" rows="10" placeholder="  This includes but not limited to dropoffs, pickups and anything we need to know to serve you better" ></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit storm information" class="submitBtn">
+    </form>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+</main>
+
+
+<footer>
+    <section class="maps">
+
+
+
+        <img class="prestonmap" src="images/map.png" alt="map pic" />
+
+
+        <div class="socialmedia">
+            <h4>We Outside</h4>
+
+            <p>
+                <span class="iconify" data-icon="dashicons:location-alt" data-inline="false"></span>105 E West 2000 N
+                <br>
+                Preston, ID 44448
+
+            </p>
+
+            <p> <span class="iconify" data-icon="entypo:old-phone" data-inline="false"></span> 820-555-900</p>
+            <a href="https://en-gb.facebook.com/login/" target="_blank"><img
+                    src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png" alt="Facebook" /></a>
+
+            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                <img src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://twitter.com/login?lang=en-gb" target="_blank"><img
+                    src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png" alt="Twitter" />
+            </a>
+        </div>
+    </section>
+
+    &copy;<span id="year"></span> | Chika Wonodi | Idaho | <a href="https://www.byui.edu/online">BYUI Online
+        Learning </a><br>
+    <section class="update">Last modified: <span id="lastmod"></span></section>
+</footer>
+
+</body>
+
+<script src="js/index.js"></script>
+
+</html>
