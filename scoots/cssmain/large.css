@@ -104,22 +104,44 @@ iframe{
 }
 
 
-.socialmediat {
-  flex-direction: row;
-  font-size: 30px;
-  padding-right: 30rem;
+
+
+
+  .socialmediat {
+    flex-direction: row;
+    font-size: 30px;
+    padding-right: inherit;
+    text-align: center;
 }
+
 
 
 .white1 {
   background-color: whitesmoke;
   /* width: 80%; */
-  width: 60%;
+  width: 100%;
   margin: 0.25rem;
   margin-left: 1.5rem;}
 
 
-
+  form input.submitBtn {
+  
+    text-align: center;
+    width: auto;
+}
+  
+  
+.mystyle {
+  background-color: wheat;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
 
 
 

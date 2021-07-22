@@ -314,7 +314,7 @@ form fieldset {
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     font-size: 20px;
-    width:96%;
+    width: auto;
     max-width: 30rem;
     text-align:left;
     
@@ -456,6 +456,9 @@ color: white;
     padding-left: 5rem;
     padding-bottom: 3rem;
     padding-top: 3rem;
+    width: 100%;
+  margin: 0 auto;
+
 
 
 
@@ -480,7 +483,7 @@ color: white;
   .socialmediat {
     flex-direction: row;
     font-size: 30px;
-    padding-right: 30rem;
+    /*padding-right: 30rem;*/
 }
 
 
@@ -490,4 +493,4 @@ color: white;
   /* width: 80%; */
   width: 60%;
   margin: 0.25rem;
-  margin-left: 1.5rem;}
+  margin-left: 12rem;}
