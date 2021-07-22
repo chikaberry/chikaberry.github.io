@@ -4,7 +4,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
+body{
+  background-color:olivedrab;
+  color:black;
+  width: 1000px;
+  margin: 0 auto;
+}
 
 
 
@@ -141,27 +146,22 @@ nav button{
 
 
 
-body{
-    background-color: tomato;
-}
 
 
-main{
+
+/*main{
     /*display:grid;
     grid-template-columns: 1/2;
-    grid-template-rows: 1fr 1fr 1fr;*/
+    grid-template-rows: 1fr 1fr 1fr;
     border: double;
-}
+}*/
 
 
 
 /*revolving pics css*/
 
 .revolving-pics img{
-   width: 1200px;
-   height:300px;
-  padding-left: 170px;
-  ;
+   display: none;
 
 }
 
@@ -313,10 +313,16 @@ form fieldset {
     background-color: burlywood;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    font-size: 30px;
+    font-size: 20px;
     width:96%;
     max-width: 30rem;
+    text-align:left;
+    
   }
+  .submitBtn{
+    padding-bottom: 2rem;
+  }
+  
   
   /* this one gives the color to the form that validates it*/
   
@@ -344,19 +350,49 @@ form fieldset {
   .white{
       background-color: whitesmoke;
       width: 80%;
-     margin: auto;
-  }
+
+      width: 35%;
+    margin: 0.25rem;
+}
+     
+  
   /*for my foprm page*/
 
 
 
   /*tourist page*/
 
-  .tourist1 img{
+  .tour img{
       width: 300px;
       height: 400px;
 
   }
+
+  .tour{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 3em;
+  }
+
+  .image {
+    padding-top: 3rem;
+    
+    
+    border-radius: 0.5rem;
+    font-size: 15px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+  }
+  h5{
+    font-size: 30px;
+  }
+
+  image p{
+    align-items: center;
+  }
+
 
 
   .socialmedia  {
@@ -374,17 +410,84 @@ form fieldset {
       flex-direction: column;
       justify-content: center;
       padding-top: 3em;
+      margin: 15rem;
   }
 
-  .address2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 3em;
-    padding-bottom: 3em;
-}
+  
 
 
 .contact{
-    width:1200px;
+    
+    
+      margin: auto;
+  
 }
+
+iframe{
+
+    
+    margin: 30px;
+    width: 30%;
+}
+
+
+.rent{
+color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: -3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    
+}
+
+.mystyle{
+    background-color:wheat;
+    color:black;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    padding-right: 5rem;
+    
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+
+
+}
+
+.mystyle  th, td {
+    border: 1px solid black;
+  }
+
+  
+
+  .headstyle{
+      background-color: royalblue;
+  }
+
+
+  
+
+
+ 
+
+  .socialmediat {
+    flex-direction: row;
+    font-size: 30px;
+    padding-right: 30rem;
+}
+
+
+
+.white1 {
+  background-color: whitesmoke;
+  /* width: 80%; */
+  width: 60%;
+  margin: 0.25rem;
+  margin-left: 1.5rem;}

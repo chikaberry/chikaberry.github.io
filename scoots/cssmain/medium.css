@@ -70,8 +70,23 @@
         }
     
 
-
-
+        .image{
+      
+      
+            box-shadow:  5px 4px  5px grey;
+            border-radius: 0.5rem;
+            
+            
+          }
+          
+          .image:hover{
+            /*background-color: rgb(240, 235, 235);*/
+      
+            background-color:teal;
+          }
+      
+      
+          
 
 
     }

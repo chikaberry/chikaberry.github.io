@@ -21,4 +21,110 @@
       }
 
 
-    }
+
+
+
+      .tour {
+  
+        grid-template-columns: 1fr 1fr ;
+        
+        justify-content: center;
+        width: 800px;
+    margin: auto;
+}
+        
+
+      
+      
+      
+      .image p{
+        display:flex ;
+      }
+
+
+.image{
+    
+    margin-left:3rem ;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+    
+form label.middle {
+  padding: .4rem 0;
+  
+}
+
+f
+.image {
+  padding-top: 3rem;
+  
+  
+  border-radius: 0.5rem;
+  font-size: 15px;}
+
+
+
+  
+  .address1{
+    display: flex;
+    flex-direction: row;}
+
+
+
+    .contact{
+      width:1200px;
+      
+        margin: auto;
+    
+  }
+
+
+  .revolving-pics img{
+    display: flex;
+    width: 1200px;
+    height:300px;
+   
+   padding-right: 260px;
+   
+ 
+ }
+
+
+ .white{
+  
+  width: 80%; 
+}
+
+
+iframe{
+
+  margin: 10px;
+  width: 80%;
+}
+
+
+.socialmediat {
+  flex-direction: row;
+  font-size: 30px;
+  padding-right: 30rem;
+}
+
+
+.white1 {
+  background-color: whitesmoke;
+  /* width: 80%; */
+  width: 60%;
+  margin: 0.25rem;
+  margin-left: 1.5rem;}
+
+
+
+
+
+
+
+
+
+
+}

@@ -140,4 +140,132 @@ fetch(apiURLW)
 
   });
 
+/* for my rental table*/
+  const requestURL = "rental.json";
 
+  fetch(requestURL)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (jsonObject) {
+          //console.table(jsonObject);  // temporary checking for valid response and data parsing
+  let tools = document.querySelector(".tools")
+          const rental = jsonObject['rental'];
+// creating the rows for the table
+          let table = document.createElement('table');
+          let row1 = document.createElement('tr');
+          let row2 = document.createElement('tr');
+          let row3 = document.createElement('tr');
+//creating the headers for the table
+          let head = document.createElement('th');
+          let head1 = document.createElement('th');
+          let head2 = document.createElement('th');
+          let head3 = document.createElement('th');
+          let head4 = document.createElement('th');
+          let head5 = document.createElement('th');
+          let head6 = document.createElement('th');
+          let head7 = document.createElement('th');
+          let head8 = document.createElement('th');
+          let head9 = document.createElement('th');
+//targetting a particular head
+        head.classList.add("headstyle");
+          
+
+          head.innerHTML =  "Max Persons and Price Chart (includes Tax)" 
+          head.colSpan = "6"
+
+          head1.innerHTML =  "" 
+          head1.colSpan = "2"
+          head2.innerHTML = "Reservation"
+          head2.colSpan = "2"
+          head3.innerHTML = "Walk-in"
+          head3.colSpan = "2"
+          head4.innerHTML = "Rent Type "
+          head5.innerHTML = "Max. Persons " 
+          head6.innerHTML = "Half Day(3hrs)"
+          head7.innerHTML = "Full Day"
+          head8.innerHTML = "Half Day(3 hrs)"
+          head9.innerHTML = "Full Day"
+//adding the head elements to their correct rows
+          row1.appendChild(head)
+          row2.appendChild(head1)
+          row2.appendChild(head2)
+          row2.appendChild(head3)
+          row3.appendChild(head4)
+          row3.appendChild(head5)
+          row3.appendChild(head6)
+          row3.appendChild(head7)
+          row3.appendChild(head8)
+          row3.appendChild(head9)
+//adding the rows to be a part of the table
+        table.appendChild(row1)
+
+        table.appendChild(row2)
+        table.appendChild(row3)
+
+  
+  
+  for (let i = 0; i < rental.length; i++ ) {
+//making a row to put ny data in
+    let row = document.createElement('tr');
+//making the individual columns to put data in
+    let Renttype = document.createElement('td');
+    let MaxPersons = document.createElement('td');
+    let HalfDay1 = document.createElement('td');
+    let FullDay1 = document.createElement('td');
+    let HalfDay2 = document.createElement('td');
+    let FullDay2 = document.createElement('td');
+//assigning tthe data, taking the columns we made and oputting the data into it
+    Renttype.innerHTML = rental[i].Renttype
+    MaxPersons.innerHTML = rental[i].Maxpersons
+    HalfDay1.innerHTML = rental[i].hDayR
+    FullDay1.innerHTML = rental[i].fDayR
+    HalfDay2.innerHTML = rental[i].hDayW
+    FullDay2.innerHTML = rental[i].fDayW
+    
+//telling the column to be part of the rows made
+    row.appendChild(Renttype)
+    row.appendChild(MaxPersons)
+    row.appendChild(HalfDay1)
+    row.appendChild(FullDay1)
+    row.appendChild(HalfDay2)
+    row.appendChild(FullDay2)
+
+
+//adding the rows to be a part of the table
+
+    table.appendChild(row)
+    
+
+
+
+
+
+    
+    
+    
+    
+    
+
+  
+    
+  
+  
+   
+
+    
+  
+  }
+     tools.appendChild(table)
+
+
+    tools.classList.add("mystyle");
+
+
+
+        });
+  
+  
+  
+  
+  
